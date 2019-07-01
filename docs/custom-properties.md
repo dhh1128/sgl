@@ -51,8 +51,9 @@ possible:
 
 * __comparison__: `=` (the default for scalar values); also `<`, `>`,
 `<=`, `>=`, `!=`
-* __sets__: `in` (the default for array values); also `not in`
-and `contains`. When the comparison operators are used with a value
+
+* __sets__: `contains` (the default for set values); also `lacks`
+(doesn't contain). When the comparison operators are used with a value
 that's a set, they are testing the set's size. Thus, if we wanted to
 say that the insurance discount from our example above depended not on
 a specific certification, but having 3 or more certifications, we could
