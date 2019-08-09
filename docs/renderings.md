@@ -1,8 +1,8 @@
 # SGL Renderings
 
 A __rendering__ is a way to represent the semantics of SGL constructs.
-There are many possible renderings of SGL. The python implementation
-is JSON-centric.
+There are many possible renderings of SGL. The [python](https://github.com/evernym/sgl) and [JavaScript/Node.js](https://github.com/evernym/simple-grant-lang) implementations
+are both JSON-centric.
 
 ### JSON
 
@@ -10,6 +10,10 @@ The default and recommended rendering is JSON. In this rendering, each
 object ([rule](reference.md#rules), [condition](reference.md#condition),
 and [principal](reference.md#principal) is a JSON object -- `{...}`. 
 Sets are JSON arrays -- `[...]`.
+
+### XML
+
+TODO
 
 ### Protobuf
 

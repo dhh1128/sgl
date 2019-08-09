@@ -206,6 +206,7 @@ def _check_satisfies(group: Set[Principal], c: Condition, disjoint) -> bool:
     elif c.roles:
         n = c.n
         for p in group:
+            # c.roles is a string; p.roles is an array...
             if p.roles and (c.roles in p.roles):
                 n -= 1
                 if n == 0:

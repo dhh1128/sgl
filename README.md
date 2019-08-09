@@ -4,8 +4,7 @@ https://circleci.com/gh/evernym/sgl)
 # SGL (Simple Grant Language)
 
 SGL is a simple but flexible [DSL](
-https://en.wikipedia.org/wiki/Domain-specific_language) for granting and
-testing privileges (authorization). It is like [XACML](
+https://en.wikipedia.org/wiki/Domain-specific_language) for matching people against criteria (typically, authorization). It is like [XACML](
 https://en.wikipedia.org/wiki/XACML) but simpler and JSON-oriented. You
 can use it to write rules about who should be able to do what, and then
 to compare circumstances to the rules to enforce custom logic. This lets
@@ -20,7 +19,7 @@ should be allowed backstage at a concert:
 {"grant": ["backstage"], "when": { "roles": "press" }}
 ```
 
-And here's how you might use that rule in code:
+And here's how you might use that rule in python code. (Compare the [JavaScript/Node.js equivalent](https://github.com/evernym/simple-grant-lang/README.md)):
 
 ```python
 from sgl.api import satisfies
@@ -58,7 +57,7 @@ https://evernym.github.io/sgl/docs/tutorial.html).
 https://evernym.github.io/sgl/docs/renderings.html). The example above
 uses the recommended JSON rendering, since JSON is familiar, broadly
 supported, and easy to read. Other possibilities include ProtoBuf,
-MsgPack, CBOR, and human-friendly text.
+MsgPack, CBOR, XML, and human-friendly text.
 
 SGL is not integrated with any particular enforcement mechanism, because
 it's designed for problems where you have to do your own enforcement.
