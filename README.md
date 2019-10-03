@@ -19,7 +19,7 @@ should be allowed backstage at a concert:
 {"grant": ["backstage"], "when": { "roles": "press" }}
 ```
 
-And here's how you might use that rule in python code. (Compare the [JavaScript/Node.js equivalent](https://github.com/evernym/simple-grant-lang/README.md)):
+And here's how you might use that rule in python code. (Compare the [JavaScript/Node.js equivalent](https://github.com/evernym/simple-grant-lang/blob/master/README.md)):
 
 ```python
 from sgl.api import satisfies
